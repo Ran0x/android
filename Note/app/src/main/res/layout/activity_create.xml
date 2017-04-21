@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:weightSum="1"
+    tools:context="com.note.note.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_weight="0.01"
+        android:gravity="bottom">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="44dp"
+                android:layout_height="32dp"
+                android:layout_gravity="left"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/arrow3"/>
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="right"
+
+                android:alpha="0.5"
+                android:background="@drawable/shape"
+
+                android:gravity="center"
+                android:text="完成"
+                android:textSize="18sp"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="left|center"
+            android:text=" 标题："
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/head"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.84"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="left|center"
+            android:text=" 分类："
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/select_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.84"
+
+            android:autoText="true"
+            android:ems="10"
+
+            android:inputType="textPersonName"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scrollbarStyle="outsideOverlay">
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:minLines="18"
+            android:visibility="visible"/>
+    </ScrollView>
+</LinearLayout>

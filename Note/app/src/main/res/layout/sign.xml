@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:fitsSystemWindows="true"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+
+              android:orientation="vertical"
+              android:weightSum="1"
+              tools:context="com.note.note.SignActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.52"
+        android:gravity="center"
+        android:text="R.E NOTE"
+        android:textColor="#59453D"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:alpha="0.7"
+                android:gravity="right"
+                android:text="用户名"
+                android:textColor="#59453D"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/account_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/bg_edit"
+                android:backgroundTintMode="src_in"
+                android:ems="10"
+                android:gravity="center"
+                android:singleLine="true"/>
+            <TextView
+                android:id="@+id/warn_1"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:alpha="0.7"
+            android:gravity="right"
+
+            android:text="密    码"
+            android:textColor="#59453D"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/password_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="0.6"
+            android:background="@drawable/bg_edit"
+            android:backgroundTintMode="src_in"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/warn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:alpha="0.7"
+            android:gravity="right"
+            android:text="确认密码"
+            android:textColor="#59453D"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/repassword_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="0.6"
+            android:background="@drawable/bg_edit"
+            android:backgroundTintMode="src_in"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/warn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:alpha="0.7"
+            android:gravity="right"
+            android:text="P I N "
+            android:textColor="#59453D"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/answer_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="0.6"
+            android:background="@drawable/bg_edit"
+            android:backgroundTintMode="src_in"
+
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/warn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/sign_1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="120dp"
+
+                android:layout_marginRight="120dp"
+                android:layout_weight="0.5"
+                android:alpha="0.5"
+                android:background="@drawable/shape"
+                android:text="注               册"
+                android:textColor="#59453D"
+                android:textSize="18sp"/>
+
+</LinearLayout>
+
+</LinearLayout>
